@@ -61,7 +61,7 @@ function displaySelect() {
 function calculateCost() {
 
   if (Seats.value <1){
-    Showput.innerText = "This is not a correct number";
+    Output.innerText = "This is not a correct number";
     return;
   }
   Ticket = Show.options[Show.selectedIndex].value;
