@@ -1,0 +1,72 @@
+* {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+h1 {
+    padding-bottom: 20px;
+}
+title {
+    display: none;
+}
+body {
+    display: flex;
+    
+    width: 50%;
+}
+#d0 {
+   width: 435px;
+   border: solid;
+   border-color: green;
+}
+#d3 {
+    flex-direction: row;
+    padding-bottom: 10px;
+    width: 435px;
+    justify-content: center;
+}
+#d4 {
+    padding-bottom: 10px;
+    width: 435px;
+}
+#d5 {
+    flex-direction: row;
+    justify-content: center;
+    width: 435px;
+    padding-bottom: 10px;
+}
+#d10 {
+    flex-direction: row;
+    width: 435px;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+button {
+    width: 100px;
+    height: 50px;
+    border: solid;
+    justify-content: center;
+}
+#creditoutput {
+    width: 80px;
+    height: 50px;
+    color: green;
+    border: solid, black;
+    background-color: black;
+    justify-content: center;
+}
+#winoutput {
+    width: 80px;
+    height: 50px;
+    color: green;
+    border: solid, black;
+    background-color: black;
+    justify-content: center;
+}
+#msgoutput {
+    width: 294px;
+    height: 50px;
+    border: solid;
+    justify-content: center;
+}
