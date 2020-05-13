@@ -14,7 +14,7 @@ const Address = document.getElementById("address");
 
 Show.addEventListener("change", displaySelect);
 Seats.addEventListener("change", displaySelect);  //These 2 call for 1 function to adjust calculation//
-Book.addEventListener("click", calculateCost);   
+Book.addEventListener("click", calculateCost); 
 
 var Ticket = Show.options[Show.selectedIndex].value;
 var Seatnumber = Seats.value;
@@ -40,6 +40,11 @@ displaySelect();
 
 function displaySelect() {
 
+  if (Seats.value <1){
+    Showput.innerText = "This is not a correct number";
+    return;
+  }
+
   Ticket = Show.options[Show.selectedIndex].value;
   Seatnumber = Seats.value;
 
@@ -54,6 +59,11 @@ function displaySelect() {
 }
 
 function calculateCost() {
+
+  if (Seats.value <1){
+    Showput.innerText = "This is not a correct number";
+    return;
+  }
   Ticket = Show.options[Show.selectedIndex].value;
   Whatshow = Show.options[Show.selectedIndex].innerText;
   Seatnumber = Seats.value;
